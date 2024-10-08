@@ -11,7 +11,20 @@ dotenv.config({
 
 /* 1st Approach to connect to DB8 */
 
-connectDB();
+connectDB()
+  .then(() => {
+    app.listen(process.env.PORT || 8000, () => {
+      console.log("Server listening on port " + process.env.PORT);
+    });
+
+    app.on("Error", (err) => {
+      console.log("ERR !!:", err);
+      throw err;
+    });
+  })
+  .catch((err) => {
+    console.log("Mongo db connection Failed: !!" + err);
+  });
 
 /* 2nd Approach to connect to DB
 
