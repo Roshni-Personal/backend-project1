@@ -7,7 +7,7 @@ const app = express();
 // app.use() method is used for all the middleware or configurations
 // app.use()(cors());
 // there are other settings for cors , read documentation for that, for now this much is enough
-app.use()(
+app.use(
   cors({
     origin: process.env.CORS_ORIGIN,
     credentials: true,
@@ -23,5 +23,11 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
 // 4. To perform crud operations of cookies on website
 app.use(cookieParser());
+
+// Routes import
+import userRouter from "./routes/user.routes.js";
+
+// Routes Declaration
+app.use("/api/v1/users", userRouter);
 
 export { app };
