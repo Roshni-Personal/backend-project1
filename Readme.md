@@ -1,5 +1,40 @@
-<!-- Chai aur Backend series -->
+# Personal Finance Tracker - Backend
 
-This is a video series on backend with javascript
+This is the **Node.js backend** for the Personal Finance Tracker. It provides API endpoints for managing users, transactions, and categories.
 
-- [Model Link](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbVNwck5mWU82SW5xM2FQT1Y3SEVBZXJpV0RsZ3xBQ3Jtc0ttT2xUWnVjSzJhSjBsNGo2cXFPWVpxem1SVUd6eWgtdThZa3dJSlVPMHpyOF83ZEdoS2d0Y0tPSzdpaXJESkI5MWJlWUtlSzNaNlpXcTN3eXI1MFBySkxydVN5UmxHeHpTRnFQa0lOU2VnTDdMWjlFTQ&q=https%3A%2F%2Fapp.eraser.io%2Fworkspace%2FYtPqZ1VogxGy1jzIDkzj%3Forigin%3Dshare&v=9B4CvtzXRpc)
+## 🚀 Features
+- **User Authentication** (JWT-based)
+- **Transaction Management**: Create, update, delete transactions.
+- **Category Management**: Fetch and filter categories.
+- **Filter Transactions** by category, type, and date range.
+- **Secure REST API** with Express.js and MongoDB.
+
+## 🛠️ Tech Stack
+- **Node.js** with **Express.js**
+- **MongoDB** with Mongoose
+- **JWT Authentication**
+- **dotenv** for Configuration
+- **Cors & Helmet** for Security
+
+## Folder structure
+
+backend/
+│── src/
+│   ├── controllers/       # API Controllers
+│   ├── models/            # Mongoose Models
+│   ├── routes/            # API Routes
+│   ├── middleware/        # Authentication Middleware
+│   ├── config/            # Database Config
+│   ├── server.js          # Entry Point
+│── package.json
+│── .env
+│── README.md
+
+
+## 📦 Installation
+
+1. Navigate to the backend directory:
+   ```sh
+   cd backend
+    yarn install
+    yarn start

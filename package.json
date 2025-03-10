@@ -1,7 +1,7 @@
 {
-  "name": "chai_aur_backend",
+  "name": "transaction_tracker",
   "version": "1.0.0",
-  "description": "A backend at chaiaurchannel",
+  "description": "A Transaction tracking app",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,32 @@
     "dev": "nodemon --env-file=.env src/index.js"
   },
   "keywords": [
-    "Javascript",
-    "Backend",
-    "Chai"
+  "Personal finance tracker",
+  "Expense tracker app",
+  "Budget management tool",
+  "Income and expense tracker",
+  "Money management app",
+  "Financial planning software",
+  "Budget planner",
+
+  "Monthly expense tracker",
+  "Automatic budget calculator",
+  "Expense analysis dashboard",
+  "Income vs. expense report",
+  "Financial summary generator",
+  "Money-saving tracker",
+  "Smart financial insights",
+
+  "React finance tracker",
+  "MERN stack budget app",
+  "Node.js personal finance app",
+  "MongoDB expense tracker",
+  "Full-stack financial tracker",
+
+  "Best finance tracker for students",
+  "Budget planner for families",
+  "Money management for freelancers",
+  "Expense tracker for small businesses"
   ],
   "author": "Roshni Wankhede",
   "license": "ISC",
@@ -20,15 +43,10 @@
     "prettier": "^3.3.3"
   },
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "cloudinary": "^2.5.1",
-    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
-    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.7.0",
-    "mongoose-aggregate-paginate-v2": "^1.1.2",
-    "multer": "^1.4.5-lts.1"
+    "mongoose-aggregate-paginate-v2": "^1.1.2"
   }
 }

@@ -15,6 +15,10 @@ export const connectDB = async () => {
       ` \n Mongo DB connection established, DB_HOST: ${connectionInstance.connection.host} `
     ); //to check for corrrect host
   } catch (err) {
+    console.log(
+      "Error connecting to MongoDB",
+      `${process.env.MONGODB_URI}/${DB_NAME}?retryWrites=true&w=majority`
+    );
     console.log("Mongodb connection FAILED: ", err);
     process.exit(1);
   }

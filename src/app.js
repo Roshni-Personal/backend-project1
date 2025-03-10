@@ -1,5 +1,4 @@
 import express from "express";
-import cookieParser from "cookie-parser";
 import cors from "cors";
 
 const app = express();
@@ -21,13 +20,13 @@ app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 // 3. to create a static file "public" which will have all static resources
 app.use(express.static("public"));
-// 4. To perform crud operations of cookies on website
-app.use(cookieParser());
 
 // Routes import
-import userRouter from "./routes/user.routes.js";
+import transactionRouter from "./routes/transaction.routes.js";
+import categoryRouter from "./routes/category.routes.js";
 
 // Routes Declaration
-app.use("/api/v1/users", userRouter);
+app.use("/api/v1/transactions", transactionRouter);
+app.use("/api/v1/category", categoryRouter);
 
 export { app };
