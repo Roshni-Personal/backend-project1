@@ -27,27 +27,3 @@ connectDB()
     console.log("Mongo db connection Failed: !!" + err);
   });
 
-/* 2nd Approach to connect to DB
-
-import express from "express";
-
-const app = express();
-
-// FFI - Immediate function execution, semicolon at the start is for cleaning purposes.
-(async () => {
-  try {
-    await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`);
-    app.on("Error", (error) => {
-      console.log("Error: ", error);
-      throw error;
-    });
-
-    app.listen(process.env.PORT, () => {
-      console.log("app is listening on port " + process.env.PORT);
-    });
-  } catch (err) {
-    console.error("Error", err);
-    throw err;
-  }
-})();
-*/
